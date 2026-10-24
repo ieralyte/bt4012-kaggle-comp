@@ -1,0 +1,12 @@
+# Competition data: too large for GitHub (train.csv is ~460 MB) and not ours to redistribute.
+# Download it from Kaggle into this folder instead (see README).
+bt-4012-competition-2026/
+*.zip
+_transfer_tmp/
+
+# Python / Jupyter / OS clutter
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+.DS_Store

@@ -1,0 +1,148 @@
+{
+  "name": "lgbm_masked_ensemble",
+  "original_experiment": "v16",
+  "seeds": [
+    2026,
+    17,
+    73
+  ],
+  "weight": 0.5,
+  "trees": 6000,
+  "config": {
+    "rate": 0.75,
+    "copies": 2,
+    "original_mass": 0.25,
+    "leaves": 31,
+    "positive_weight": 8.0,
+    "trees": 6000,
+    "checkpoints": [
+      3000,
+      6000
+    ],
+    "retain_time": true,
+    "extra_trees": false,
+    "l2": 5.0,
+    "feature_fraction": 0.85,
+    "name": "long_emphasized8"
+  },
+  "data_sha256": {
+    "sample_submission.csv": "3dba74ad6151053aa21f366fb9faf6da7393969a0ba6f8a2ebcec561871f739e",
+    "test.csv": "344e47c8cd8815f4072d7f6ecbecee8919ab648294a8eb4ed032a026c3eb91db",
+    "train.csv": "6f7e56883f0aa27147262a0d71954ad64702ca57f16fbf9ed58fae21a66dd706",
+    "txs_edgelist.csv": "a35053ba68a98e4382cae2ba65b9d9e36b23b6439e02dff084971b1b72a5156e"
+  },
+  "public_result": {
+    "public_score": 0.95258,
+    "reported_on": "2026-10-21",
+    "submission_sha256": "abe3aa908c961e164ac25f2715bc2edec6ef17ea61a6c18b162693515da0ea1e",
+    "source": "User-reported; exact submission date unspecified",
+    "gain_vs_v13": 0.00019
+  },
+  "development_mean_auc": 0.9511052500139616,
+  "historical_forecasts": [
+    {
+      "cutoff": 14,
+      "start": 15,
+      "end": 28,
+      "reference_auc": 0.9656631744082111,
+      "candidate_auc": 0.9654462769948294,
+      "gain": -0.00021689741338171142
+    },
+    {
+      "cutoff": 21,
+      "start": 22,
+      "end": 35,
+      "reference_auc": 0.9127094700818357,
+      "candidate_auc": 0.914248815237467,
+      "gain": 0.0015393451556313664
+    },
+    {
+      "cutoff": 23,
+      "start": 24,
+      "end": 35,
+      "reference_auc": 0.9883329271789884,
+      "candidate_auc": 0.9879163000448759,
+      "gain": -0.00041662713411250163
+    },
+    {
+      "cutoff": 28,
+      "start": 29,
+      "end": 35,
+      "reference_auc": 0.9975123663246908,
+      "candidate_auc": 0.9976236319304288,
+      "gain": 0.00011126560573804234
+    },
+    {
+      "cutoff": 17,
+      "start": 18,
+      "end": 31,
+      "reference_auc": 0.9304789035683145,
+      "candidate_auc": 0.9319006887720118,
+      "gain": 0.00142178520369729
+    },
+    {
+      "cutoff": 20,
+      "start": 21,
+      "end": 34,
+      "reference_auc": 0.9072270849462989,
+      "candidate_auc": 0.9094957871041565,
+      "gain": 0.0022687021578575717
+    },
+    {
+      "cutoff": 18,
+      "start": 19,
+      "end": 32,
+      "reference_auc": 0.9128298829374797,
+      "candidate_auc": 0.9147959617894627,
+      "gain": 0.0019660788519829664
+    },
+    {
+      "cutoff": 19,
+      "start": 20,
+      "end": 33,
+      "reference_auc": 0.917565103150102,
+      "candidate_auc": 0.9204507962258941,
+      "gain": 0.0028856930757921173
+    }
+  ],
+  "files": {
+    "dependencies/v13_anchor.csv": "8585cdcd85a771481bff77fb7d1abed0f6012f6368b48e277577ddd5187b5ccb",
+    "submission.csv": "abe3aa908c961e164ac25f2715bc2edec6ef17ea61a6c18b162693515da0ea1e",
+    "models/long_emphasized8__seed2026__35.joblib": "c484c1b0f147d24b6278aaffb18dbae84b7d39303213e3d39641890d49bba7cb",
+    "models/long_emphasized8__seed17__35.joblib": "ffeade4ad2c2a27894032b92239a0b61b01dbbdc0c8b7c5acdfa2d50696caa55",
+    "models/long_emphasized8__seed73__35.joblib": "3ba5a61fa7460bde4f2548bf9b869c7898875a3cea5c74b3448a23916ed48fe0",
+    "reference__14.csv": "a4b78e927025bc048678db4691173d7d7904192a19ffb9f48b4209bfa86b7791",
+    "cache/long_emphasized8__seed2026__14.csv": "a0c44117b32dfe7ab51cf9409f9b74a55409eb767dadc9a7a6f73f1150963443",
+    "cache/long_emphasized8__seed17__14.csv": "79b9600f52fd7cb2f1bcd20fad0f002c8b9a78c435fd9b989f841729dbb5285d",
+    "cache/long_emphasized8__seed73__14.csv": "3d8f355f7c0cde18994444fb42d11f4bf59f24236184d5041c3b8ccc1f216a6c",
+    "reference__21.csv": "dae11d1d7bff5cabf749835669bd9b10adf67672b36b3ee816c64cb69805ade9",
+    "cache/long_emphasized8__seed2026__21.csv": "ad57f260b2e6a0cc5144c6e855cf2888e93f1decd8d51cd2e1ec79ce9bb63392",
+    "cache/long_emphasized8__seed17__21.csv": "4d38d6e736651b57870b9f2becbe0ac6a78ddf692d684b055480692a6c22d4de",
+    "cache/long_emphasized8__seed73__21.csv": "1346e2f1353bddfd51a989dbaaf9663a36862c10aa1b3054d8ffe0d71fffd057",
+    "reference__23.csv": "0d822a076b72164451e04bf0373164ec45af26102bd5cf63d5402b22613960f0",
+    "cache/long_emphasized8__seed2026__23.csv": "d954141d8d1b59b609d97c0e4351c4b3481676a931a2fe4ad6b93974b2846b6b",
+    "cache/long_emphasized8__seed17__23.csv": "d10db61a63b1c3065e379cf450ef3a41042b45a12fa49984e2d6e487cadedd54",
+    "cache/long_emphasized8__seed73__23.csv": "c007229738de5d43f565b1880d28e65a3b790995b45b06c7717372c771d3db55",
+    "reference__28.csv": "31c1028f5221c791cf7a23f62fe575a6476254220954021b14b90da3ccf57e76",
+    "cache/long_emphasized8__seed2026__28.csv": "2a4fcb4f34fb55eac76d92d89d3499fa3bb1aa118eb5e2be8bbc2a7d68a9295f",
+    "cache/long_emphasized8__seed17__28.csv": "0069d1987e1637141a73bc8e4dea9c82b9e2c6be8007319d1cf8849ec4f33d3e",
+    "cache/long_emphasized8__seed73__28.csv": "d96c94559dcba13e59b32b7de12079b0e93206e71d4b6778b85dbeb140708ed0",
+    "reference__17.csv": "4103c1d96d607e7adb787df2ee1eb56c30deff29223d6a7bcc880066f41ce9c3",
+    "cache/long_emphasized8__seed2026__17.csv": "b399435cfa159a0d257053b78cbc8bafd80d91525dbb16bc2e28a8e7584d27d8",
+    "cache/long_emphasized8__seed17__17.csv": "459382fbe916ad324cce1c151c0495264bbffd709b0ec9a9bb193ce5f1cf479d",
+    "cache/long_emphasized8__seed73__17.csv": "8de17335512690f6340f547b97da114d1a86c01530d16d4761926207a497a3b3",
+    "reference__20.csv": "b670758b8ba3d2416bdcbf64c4eeb7128bf16491dd4538c771ea242e8469512a",
+    "cache/long_emphasized8__seed2026__20.csv": "cdf712f1f7955cdec128a5242447289d81f46536a1e61e2b1bd35242419bbcc2",
+    "cache/long_emphasized8__seed17__20.csv": "4a7865ec0a75ba46f131af5adaa85b21e1a2689388fe0add970ec954dcc7aa69",
+    "cache/long_emphasized8__seed73__20.csv": "3b4c17a515f18f2bd7853d62b13122e1953a8ae276c917028cbc0fe740b20573",
+    "reference__18.csv": "f6fb09d9e1cbd8887c4a7d28afd0faca9b263a26edac3ca31ac93cbce0958725",
+    "cache/long_emphasized8__seed2026__18.csv": "07f43673124cb3fa8efa6cdd3508dae4b71c06c3a247073464e1c51ac8d28798",
+    "cache/long_emphasized8__seed17__18.csv": "14314eee0a9d5589406c026ed488aa984fa501dccdeaa5a91c7620ac79c0ebbf",
+    "cache/long_emphasized8__seed73__18.csv": "68b96e23ecc31c288145bbed689e872b6094827c2e0f89a0914f22b19e95abb8",
+    "reference__19.csv": "b4d83048e877466110de6393fc8888af2b1aea9c759aba1479597312009851bf",
+    "cache/long_emphasized8__seed2026__19.csv": "4495bf3c548f0f9dddc0d49b8a4d68d857c25a025c1f35889ee281fc649cf3c2",
+    "cache/long_emphasized8__seed17__19.csv": "0d1580267055c42197b8dac228984507fa851a822d54c3d7474b1a4574b7843a",
+    "cache/long_emphasized8__seed73__19.csv": "75445b3133c40f1d43a335dbd9bbf68160502965b39b0ef5b3767a9ce9e68d7a"
+  },
+  "anchor_note": "Frozen v13 predictions; required for this supplied test set. Refit option rebuilds only the final masked core, not the anchor."
+}
